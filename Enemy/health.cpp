@@ -16,7 +16,7 @@ void Health::Draw() const {
     Enemy::Draw();
     // head.Draw();
 }
-void Health::Update(float deltaTime) {
+/*void Health::Update(float deltaTime) {
     Enemy::Update(deltaTime);
     head.Position = Position;
     // Choose arbitrary one.
@@ -30,7 +30,7 @@ void Health::Update(float deltaTime) {
         targetRotation = distRadian(rng);
     }
     head.Rotation = (head.Rotation + deltaTime * targetRotation) / (1 + deltaTime);
-}
+}*/
 void Health::Hit(float damage) {
     PlayScene* scene = getPlayScene();
     if (!scene) return;

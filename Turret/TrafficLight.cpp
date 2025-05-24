@@ -12,7 +12,6 @@
 
 const int TrafficLight::Price = 200;
 TrafficLight::TrafficLight(float x, float y) : Turret("play/tower-base.png", "play/traffic-removebg-preview.png", x, y, 300, Price, 0.0) {
-    // Move center downward, since we the turret head is slightly biased upward.
     Anchor.y += 8.0f / GetBitmapHeight();
 }
 void TrafficLight::CreateBullet() {

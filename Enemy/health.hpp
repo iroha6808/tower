@@ -11,7 +11,7 @@ private:
 public:
     Health(int x, int y);
     void Draw() const override;
-    void Update(float deltaTime) override;
+    // void Update(float deltaTime) override;
     void Hit(float damage) override;
 };
 #endif
